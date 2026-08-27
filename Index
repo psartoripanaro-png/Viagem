@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Derroteiro do Cap de Creus — Llançà, 29 ago a 4 set 2026</title>
+<meta name="description" content="Roteiro de 6 dias em Llançà e no Parc Natural del Cap de Creus para 5 pessoas: trilhas, praias, barco, Dalí, onde comer e quanto custa.">
+<meta name="theme-color" content="#0A2338">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A2338;
+  --ink-2:#14344F;
+  --paper:#F4EFE2;
+  --paper-2:#EBE3D0;
+  --land:#E4D9BC;
+  --land-2:#D8C9A4;
+  --shoal:#C9E0E7;
+  --sea:#9DC3D2;
+  --slate:#5E7280;
+  --magenta:#C1116B;
+  --magenta-tint:#F5DDE9;
+
+  --display:"Fraunces",Georgia,serif;
+  --body:"Instrument Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+
+  --edge:1px solid rgba(10,35,56,.16);
+  --edge-strong:1px solid rgba(10,35,56,.42);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:74px;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:16.5px;
+  line-height:1.6;
+  font-feature-settings:"ss01";
+}
+::selection{background:var(--magenta);color:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--magenta);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* ─────────── tokens tipográficos ─────────── */
+.eyebrow{
+  font-family:var(--mono);
+  font-size:11.5px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--magenta);
+  font-weight:600;
+}
+.eyebrow--quiet{color:var(--slate)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.chart-label{
+  font-family:var(--display);
+  font-style:italic;
+  font-weight:400;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+/* ─────────── cabeçalho ─────────── */
+.masthead{
+  background:var(--ink);
+  color:var(--paper);
+  padding:56px 0 0;
+  position:relative;
+  overflow:hidden;
+}
+.masthead::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(244,239,226,.16) 1px,transparent 1px);
+  background-size:22px 22px;
+  opacity:.5;
+}
+.masthead .wrap{position:relative}
+.mast-top{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:baseline;justify-content:space-between}
+.coords{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;color:var(--sea)}
+h1{
+  font-family:var(--display);
+  font-optical-sizing:auto;
+  font-weight:600;
+  font-size:clamp(2.9rem,10vw,6.4rem);
+  line-height:.92;
+  letter-spacing:-.025em;
+  margin:18px 0 0;
+}
+h1 em{
+  display:block;
+  font-style:italic;
+  font-weight:300;
+  font-size:.42em;
+  letter-spacing:.02em;
+  color:var(--sea);
+  margin-top:10px;
+}
+.mast-meta{
+  display:flex;flex-wrap:wrap;gap:0;
+  margin:34px 0 0;
+  border-top:1px solid rgba(157,195,210,.3);
+}
+.mast-meta div{
+  flex:1 1 130px;
+  padding:15px 18px 15px 0;
+  border-right:1px solid rgba(157,195,210,.22);
+}
+.mast-meta div:last-child{border-right:0}
+.mast-meta dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:5px}
+.mast-meta dd{font-family:var(--mono);font-size:17px;font-weight:500}
+
+/* ─────────── mapa ─────────── */
+.chart{
+  background:var(--ink);
+  padding:34px 0 46px;
+  position:relative;
+}
+.chart .wrap{position:relative}
+.chart-frame{
+  background:var(--shoal);
+  border:3px solid var(--ink-2);
+  box-shadow:0 0 0 1px rgba(244,239,226,.25);
+  border-radius:2px;
+}
+.chart-frame svg{display:block;width:100%;height:auto}
+.chart-cap{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  margin-top:12px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);
+}
+
+/* elementos do svg */
+.coast{fill:var(--land);stroke:var(--ink);stroke-width:2.2;stroke-linejoin:round}
+.grat{stroke:var(--ink);stroke-width:.5;opacity:.16}
+.reserva{fill:none;stroke:var(--magenta);stroke-width:1.6;stroke-dasharray:9 6;opacity:.85}
+.place-dot{fill:var(--ink)}
+.place-txt{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;fill:var(--ink);text-transform:uppercase}
+.sea-txt{font-family:"Fraunces",serif;font-style:italic;font-size:15px;letter-spacing:.3em;fill:#3D6B7E;text-transform:uppercase}
+.zone-txt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.16em;fill:var(--magenta)}
+.pin-hit{cursor:pointer}
+.pin-ring{fill:var(--paper);stroke:var(--magenta);stroke-width:2.4}
+.pin-num{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600;fill:var(--magenta);text-anchor:middle}
+.pin-lbl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;fill:var(--ink);text-transform:uppercase}
+.pin-hit:hover .pin-ring,.pin-hit:focus-visible .pin-ring{fill:var(--magenta)}
+.pin-hit:hover .pin-num,.pin-hit:focus-visible .pin-num{fill:var(--paper)}
+.light-ray{fill:var(--magenta);opacity:.75}
+.base-mark{fill:var(--ink);stroke:var(--paper);stroke-width:1.5}
+
+@keyframes flash{0%,88%,100%{opacity:.2}92%{opacity:.95}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes drop{from{opacity:0;transform:translateY(-9px)}to{opacity:1;transform:none}}
+.light-ray{animation:flash 4.5s infinite}
+.light-ray--b{animation-delay:1.5s}
+.light-ray--c{animation-delay:3s}
+.coast{stroke-dasharray:4200;stroke-dashoffset:4200;animation:draw 2.4s cubic-bezier(.4,0,.2,1) forwards}
+.pin-hit{opacity:0;animation:drop .5s ease forwards;transform-box:fill-box;transform-origin:center}
+.pin-hit:nth-of-type(1){animation-delay:1.5s}
+.pin-hit:nth-of-type(2){animation-delay:1.62s}
+.pin-hit:nth-of-type(3){animation-delay:1.74s}
+.pin-hit:nth-of-type(4){animation-delay:1.86s}
+.pin-hit:nth-of-type(5){animation-delay:1.98s}
+.pin-hit:nth-of-type(6){animation-delay:2.1s}
+
+/* ─────────── avisos ─────────── */
+.notices{background:var(--magenta);color:var(--paper);padding:34px 0}
+.notices h2{font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin-bottom:20px;opacity:.9}
+.notice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1px;background:rgba(244,239,226,.3)}
+.notice{background:var(--magenta);padding:20px 22px 22px}
+.notice h3{font-family:var(--display);font-size:1.22rem;font-weight:600;letter-spacing:-.01em;margin-bottom:7px}
+.notice p{font-size:14.5px;line-height:1.55;opacity:.94}
+.notice code{font-family:var(--mono);font-size:12.5px;background:rgba(10,35,56,.28);padding:1px 5px;border-radius:2px}
+
+/* ─────────── navegação ─────────── */
+.daynav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(244,239,226,.94);
+  backdrop-filter:blur(9px);
+  border-bottom:var(--edge-strong);
+}
+.daynav ul{display:flex;list-style:none;overflow-x:auto;scrollbar-width:none}
+.daynav ul::-webkit-scrollbar{display:none}
+.daynav a{
+  display:block;padding:15px 17px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  text-decoration:none;white-space:nowrap;color:var(--slate);
+  border-bottom:3px solid transparent;transition:color .15s,border-color .15s;
+}
+.daynav a:hover{color:var(--magenta)}
+.daynav a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--magenta)}
+
+/* ─────────── dias ─────────── */
+.day{padding:66px 0 10px;border-top:var(--edge)}
+.day:first-of-type{border-top:0}
+.day-head{display:grid;grid-template-columns:96px 1fr;gap:22px;align-items:start;margin-bottom:34px}
+.day-tick{
+  border-top:3px solid var(--magenta);
+  padding-top:9px;
+  font-family:var(--mono);
+}
+.day-tick b{display:block;font-size:26px;font-weight:600;line-height:1}
+.day-tick span{display:block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);margin-top:4px}
+.day-head h2{
+  font-family:var(--display);font-optical-sizing:auto;
+  font-weight:600;font-size:clamp(1.85rem,4.6vw,2.9rem);
+  line-height:1.03;letter-spacing:-.022em;
+}
+.day-head p{margin-top:11px;color:var(--slate);max-width:60ch;font-size:15.5px}
+
+/* linha do tempo */
+.stops{list-style:none;border-top:var(--edge)}
+.stop{display:grid;grid-template-columns:96px 1fr;gap:22px;padding:20px 0;border-bottom:var(--edge)}
+.stop-time{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--magenta);letter-spacing:.04em;padding-top:3px}
+.stop-time em{display:block;font-style:normal;color:var(--slate);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
+.stop h3{font-family:var(--body);font-size:17px;font-weight:600;letter-spacing:-.005em;margin-bottom:5px}
+.stop p{font-size:15px;color:#33475A;max-width:66ch}
+.stop p + p{margin-top:8px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}
+.tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;
+  border:var(--edge-strong);padding:3px 9px;border-radius:99px;color:var(--ink);
+}
+.tag--cost{border-color:var(--magenta);color:var(--magenta)}
+.tag--tel{text-decoration:none}
+.tag--tel:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+.alt{
+  margin-top:22px;padding:18px 20px;
+  background:var(--paper-2);border-left:3px solid var(--slate);
+}
+.alt .eyebrow{color:var(--slate);display:block;margin-bottom:7px}
+.alt p{font-size:14.5px;color:#33475A}
+.alt p + p{margin-top:7px}
+
+/* ─────────── tabelas ─────────── */
+.slab{background:var(--ink);color:var(--paper);padding:66px 0;margin-top:56px}
+.slab h2{font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,5vw,2.9rem);letter-spacing:-.022em;margin:12px 0 30px}
+.slab .eyebrow{color:var(--sea)}
+.tbl{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  text-align:left;font-weight:500;padding:0 14px 11px 0;
+  border-bottom:1px solid rgba(157,195,210,.42);
+}
+.tbl td{padding:12px 14px 12px 0;border-bottom:1px solid rgba(157,195,210,.17);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl .pick td{background:rgba(193,17,107,.16)}
+.tbl .pick td:first-child{box-shadow:inset 3px 0 0 var(--magenta)}
+.tbl-total td{border-top:1px solid rgba(157,195,210,.42);padding-top:15px;font-weight:600;font-size:17px}
+.slab-note{margin-top:22px;font-size:14px;color:var(--sea);max-width:62ch}
+
+section.light{padding:66px 0}
+section.light h2{font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,5vw,2.9rem);letter-spacing:-.022em;margin:12px 0 30px}
+.tbl--light th{border-bottom-color:rgba(10,35,56,.4)}
+.tbl--light td{border-bottom-color:rgba(10,35,56,.13)}
+.closed{color:var(--magenta);font-family:var(--mono);font-size:13px}
+.open{color:var(--slate);font-family:var(--mono);font-size:13px}
+
+/* ─────────── checklist ─────────── */
+.checks{list-style:none;border-top:var(--edge-strong);max-width:760px}
+.checks li{border-bottom:var(--edge)}
+.checks label{display:flex;gap:15px;align-items:flex-start;padding:16px 4px;cursor:pointer}
+.checks input{
+  appearance:none;flex:0 0 20px;width:20px;height:20px;margin-top:2px;
+  border:1.8px solid var(--ink);border-radius:2px;background:transparent;cursor:pointer;
+  display:grid;place-content:center;transition:background .12s,border-color .12s;
+}
+.checks input::after{content:"";width:10px;height:10px;transform:scale(0);background:var(--paper);clip-path:polygon(14% 46%,0 60%,39% 100%,100% 22%,86% 8%,39% 71%);transition:transform .12s}
+.checks input:checked{background:var(--magenta);border-color:var(--magenta)}
+.checks input:checked::after{transform:scale(1)}
+.checks input:checked ~ .ck-txt{opacity:.42;text-decoration:line-through}
+.ck-txt b{display:block;font-weight:600;font-size:16px}
+.ck-txt span{display:block;font-size:14px;color:var(--slate);margin-top:2px}
+
+/* ─────────── mercados ─────────── */
+.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:1px;background:rgba(10,35,56,.2);border:var(--edge-strong)}
+.week div{background:var(--paper);padding:16px 14px;min-height:104px}
+.week div.on{background:var(--magenta-tint)}
+.week dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin-bottom:8px}
+.week dd{font-family:var(--display);font-size:15.5px;font-weight:500;line-height:1.32}
+.week div.on dd{color:var(--magenta)}
+.week .none{font-family:var(--body);font-size:14px;color:rgba(10,35,56,.32)}
+
+/* ─────────── telefones ─────────── */
+.tels{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:1px;background:rgba(157,195,210,.3)}
+.tels a{
+  background:var(--ink);padding:15px 17px;text-decoration:none;display:block;
+  transition:background .14s;
+}
+.tels a:hover{background:var(--magenta)}
+.tels b{display:block;font-size:14.5px;font-weight:500}
+.tels span{display:block;font-family:var(--mono);font-size:15px;color:var(--sea);margin-top:3px}
+.tels a:hover span{color:var(--paper)}
+
+/* ─────────── rodapé ─────────── */
+footer{border-top:var(--edge-strong);padding:34px 0 60px;font-size:13.5px;color:var(--slate)}
+footer p{max-width:64ch}
+footer p + p{margin-top:9px}
+
+@media(max-width:640px){
+  body{font-size:16px}
+  .day-head,.stop{grid-template-columns:64px 1fr;gap:15px}
+  .day-tick b{font-size:20px}
+  .mast-meta div{flex:1 1 46%;border-right:0}
+  .hide-sm{display:none}
+  .masthead{padding-top:38px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .coast{stroke-dashoffset:0}
+  .pin-hit{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-top">
+      <p class="eyebrow">Derroteiro · Alt Empordà</p>
+      <p class="coords">42°22′N &nbsp; 003°09′E</p>
+    </div>
+    <h1>Cap de Creus<em>Llançà, 29 ago – 4 set 2026</em></h1>
+    <dl class="mast-meta">
+      <div><dt>Tripulação</dt><dd>5</dd></div>
+      <div><dt>Noites</dt><dd>6</dd></div>
+      <div><dt>Base</dt><dd>Llançà</dd></div>
+      <div><dt>Por pessoa</dt><dd>660–880€</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="chart">
+  <div class="wrap">
+    <div class="chart-frame">
+      <svg viewBox="0 0 900 520" role="img" aria-label="Mapa esquemático do Cap de Creus com os seis dias do roteiro marcados">
+        <rect width="900" height="520" fill="#C9E0E7"/>
+
+        <!-- graticule -->
+        <g class="grat">
+          <line x1="0" y1="88" x2="900" y2="88"/><line x1="0" y1="208" x2="900" y2="208"/>
+          <line x1="0" y1="328" x2="900" y2="328"/><line x1="0" y1="448" x2="900" y2="448"/>
+          <line x1="146" y1="0" x2="146" y2="520"/><line x1="356" y1="0" x2="356" y2="520"/>
+          <line x1="566" y1="0" x2="566" y2="520"/><line x1="776" y1="0" x2="776" y2="520"/>
+        </g>
+
+        <!-- terra -->
+        <path class="coast" d="M 500 -6
+          C 505 26, 497 40, 503 52
+          C 496 72, 479 86, 486 104
+          C 496 118, 512 127, 519 142
+          C 523 159, 505 168, 509 184
+          C 521 206, 540 223, 556 241
+          C 570 254, 582 262, 594 267
+          C 631 269, 672 263, 713 272
+          C 761 281, 811 288, 852 309
+          C 840 331, 811 349, 786 361
+          C 776 367, 772 370, 767 374
+          C 758 378, 752 380, 750 383
+          C 759 398, 767 412, 769 428
+          C 746 456, 711 479, 682 490
+          C 650 481, 600 458, 537 449
+          C 478 453, 418 471, 356 502
+          L 356 528 L -6 528 L -6 -6 Z"/>
+
+        <!-- reserva natural integral -->
+        <path class="reserva" d="M 726 246 C 790 250, 848 274, 866 312 C 856 352, 818 382, 782 396"/>
+        <text class="zone-txt" x="742" y="238">RESERVA NATURAL INTEGRAL</text>
+
+        <!-- mares -->
+        <text class="sea-txt" x="596" y="196">Mar d’Amunt</text>
+        <text class="sea-txt" x="620" y="452">Mar d’Avall</text>
+
+        <!-- faróis -->
+        <g class="light-ray"><path d="M 556 241 L 546 213 L 566 213 Z"/></g>
+        <g class="light-ray light-ray--b"><path d="M 852 309 L 842 281 L 862 281 Z"/></g>
+        <g class="light-ray light-ray--c"><path d="M 769 428 L 759 400 L 779 400 Z"/></g>
+
+        <!-- localidades -->
+        <g class="hide-sm">
+          <circle class="place-dot" cx="503" cy="52" r="3"/><text class="place-txt" x="466" y="44" text-anchor="end">Portbou</text>
+          <circle class="place-dot" cx="486" cy="104" r="3"/><text class="place-txt" x="452" y="107" text-anchor="end">Colera</text>
+          <circle class="place-dot" cx="750" cy="383" r="3.4"/><text class="place-txt" x="736" y="400" text-anchor="end">Cadaqués</text>
+          <circle class="place-dot" cx="537" cy="449" r="3"/><text class="place-txt" x="524" y="466" text-anchor="end">Roses</text>
+        </g>
+
+        <!-- base -->
+        <rect class="base-mark" x="503" y="178" width="12" height="12"/>
+        <text class="place-txt" x="494" y="177" text-anchor="end" style="font-weight:600">Llançà · base</text>
+
+        <!-- pinos dos dias -->
+        <a class="pin-hit" href="#d1" aria-label="Domingo 30: Cap Ras">
+          <circle class="pin-ring" cx="519" cy="128" r="15"/><text class="pin-num" x="519" y="133">1</text>
+          <text class="pin-lbl" x="540" y="126">Cap Ras</text>
+        </a>
+        <a class="pin-hit" href="#d2" aria-label="Segunda 31: dia de barco">
+          <circle class="pin-ring" cx="690" cy="215" r="15"/><text class="pin-num" x="690" y="220">2</text>
+          <text class="pin-lbl" x="711" y="213">Barco</text>
+        </a>
+        <a class="pin-hit" href="#d3" aria-label="Terça 1: Cadaqués e Cap de Creus">
+          <circle class="pin-ring" cx="812" cy="340" r="15"/><text class="pin-num" x="812" y="345">3</text>
+          <text class="pin-lbl" x="812" y="371" text-anchor="middle">Cap de Creus</text>
+        </a>
+        <a class="pin-hit" href="#d4" aria-label="Quarta 2: Sant Pere de Rodes">
+          <circle class="pin-ring" cx="527" cy="303" r="15"/><text class="pin-num" x="527" y="308">4</text>
+          <text class="pin-lbl" x="548" y="301">Sant Pere de Rodes</text>
+        </a>
+        <a class="pin-hit" href="#d5" aria-label="Quinta 3: Figueres">
+          <circle class="pin-ring" cx="118" cy="430" r="15"/><text class="pin-num" x="118" y="435">5</text>
+          <text class="pin-lbl" x="139" y="428">Figueres</text>
+        </a>
+        <a class="pin-hit" href="#d6" aria-label="Sexta 4: Port de la Selva e volta">
+          <circle class="pin-ring" cx="594" cy="267" r="15"/><text class="pin-num" x="594" y="272">6</text>
+          <text class="pin-lbl" x="615" y="265">Port de la Selva</text>
+        </a>
+
+        <!-- rosa dos ventos -->
+        <g transform="translate(74,92)" class="hide-sm">
+          <circle r="30" fill="none" stroke="#0A2338" stroke-width=".8" opacity=".4"/>
+          <path d="M 0 -34 L 6 0 L 0 34 L -6 0 Z" fill="#0A2338" opacity=".75"/>
+          <path d="M 0 -34 L 6 0 L -6 0 Z" fill="#C1116B"/>
+          <text x="0" y="-42" text-anchor="middle" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;fill:#0A2338">N</text>
+          <text x="0" y="56" text-anchor="middle" style="font-family:'Fraunces',serif;font-style:italic;font-size:11px;letter-spacing:.16em;fill:#C1116B">tramuntana</text>
+        </g>
+      </svg>
+    </div>
+    <div class="chart-cap">
+      <span>Esquema, não é carta náutica · toque num pino para ir ao dia</span>
+      <span class="hide-sm">Magenta = luzes, zonas restritas e avisos</span>
+    </div>
+  </div>
+</div>
+
+<section class="notices">
+  <div class="wrap">
+    <h2>Avisos à navegação</h2>
+    <div class="notice-grid">
+      <div class="notice">
+        <h3>Tramuntana</h3>
+        <p>O vento cancela barco e caiaque de um dia para o outro. O caiaque cai primeiro: a SK Kayak cancela com vento força 3, de 13 a 15 km/h. Confirme na véspera, por telefone.</p>
+      </div>
+      <div class="notice">
+        <h3>Pla Alfa nível 3</h3>
+        <p>Em risco alto de incêndio, o Parc Natural fecha até para pedestres. Consulte no dia em <code>interior.gencat.cat</code> → Agents Rurals → Pla Alfa.</p>
+      </div>
+      <div class="notice">
+        <h3>Estrada do farol</h3>
+        <p>Até <b>31/08</b> a estrada Cadaqués–Far de Cap de Creus fica fechada a carros das 9h30 às 21h30, com videovigilância e multa. Estacione no Corral d’en Morell e pegue a lançadeira.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="daynav" aria-label="Dias do roteiro">
+  <div class="wrap" style="padding:0">
+    <ul>
+      <li><a href="#d0">Sáb 29</a></li>
+      <li><a href="#d1">Dom 30</a></li>
+      <li><a href="#d2">Seg 31</a></li>
+      <li><a href="#d3">Ter 1</a></li>
+      <li><a href="#d4">Qua 2</a></li>
+      <li><a href="#d5">Qui 3</a></li>
+      <li><a href="#d6">Sex 4</a></li>
+      <li><a href="#mesa">Onde comer</a></li>
+      <li><a href="#custo">Custo</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#tel">Telefones</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- SÁBADO -->
+<article class="day" id="d0">
+  <div class="day-head">
+    <div class="day-tick"><b>29</b><span>Sáb</span></div>
+    <div>
+      <h2>Chegada à noite</h2>
+      <p>Nada marcado. Só jantar e dormir.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">21h<em>Jantar</em></div>
+      <div>
+        <h3>El Floc</h3>
+        <p>Av. Pau Casals 25. Aberto todos os dias das 9h à meia-noite, o mais seguro para chegada tardia. Tapas, carnes, boa relação preço-qualidade.</p>
+        <div class="tags">
+          <span class="tag tag--cost">30–35€ /pessoa</span>
+          <a class="tag tag--tel" href="tel:+34972121662">972 12 16 62</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">—<em>Alternativas</em></div>
+      <div>
+        <h3>Mångata ou Pati Blanc</h3>
+        <p>Mångata fica na Platja de la Farella, com mesa quase na areia, até 23h — reserve. Pati Blanc fecha às 22h. O L’Atelier fecha sábado e domingo; fica reservado para sexta.</p>
+        <div class="tags"><a class="tag tag--tel" href="tel:+34613522212">613 52 22 12</a></div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">—<em>Antes de dormir</em></div>
+      <div>
+        <h3>Comprar o café da manhã</h3>
+        <p>Aos domingos o comércio de Llançà abre reduzido. Se der, resolva hoje.</p>
+      </div>
+    </li>
+  </ul>
+</article>
+
+<!-- DOMINGO -->
+<article class="day" id="d1">
+  <div class="day-head">
+    <div class="day-tick"><b>30</b><span>Dom</span></div>
+    <div>
+      <h2>Trilha do Cap Ras e calas do norte</h2>
+      <p>Dia cheio, sem nada que precise de ingresso. Domingo é o dia mais movimentado da temporada, com gente vindo de Figueres, Girona e da França. A estratégia é começar cedo e sair da praia antes das 14h. Máxima de 28°C, sem chuva.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">8h30<em>Trilha</em></div>
+      <div>
+        <h3>Circular do Cap Ras</h3>
+        <p>Cerca de 5 km, bem sinalizada, com trechos de sombra e várias calas para banho no caminho. É a trilha mais fácil da região e sai em 1h30 sem pressa. Estacionamento na entrada do Camping Cap Ras, 10 min de Llançà.</p>
+        <p>Levem roupa de banho: as calas ali são o melhor mergulho da semana e ficam vazias antes das 11h.</p>
+        <div class="tags"><span class="tag">5 km · fácil</span><span class="tag tag--cost">grátis</span></div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">11h30<em>Praia</em></div>
+      <div>
+        <h3>Garbet ou Colera</h3>
+        <p>Cinco quilômetros mais ao norte. Garbet é uma enseada de seixos com água transparente e pinhal atrás. Platja de les Portes, em Colera, é mais tranquila.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">14h<em>Almoço</em></div>
+      <div>
+        <h3>Reserve na véspera</h3>
+        <p>Abrem domingo: Pati Blanc, Miralles, Els Pescadors, El Floc. El Celler, no Port de la Selva, só serve almoço aos domingos.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">20h<em>Pôr do sol</em></div>
+      <div>
+        <h3>Far de s’Arenella</h3>
+        <p>Dez minutos de carro. O sol se põe sobre a baía do Port de la Selva — a única da península voltada a noroeste. É o melhor mirante gratuito da região.</p>
+        <div class="tags"><span class="tag tag--cost">grátis</span></div>
+      </div>
+    </li>
+  </ul>
+  <div class="alt">
+    <span class="eyebrow">Alternativa para o dia inteiro</span>
+    <p>O <b>Enokayak</b> da SK Kayak sai do Port de la Selva aos domingos: 4h com picnic na praia incluído. Mínimo de 6 pessoas, então vocês entram junto com outro grupo.</p>
+  </div>
+</article>
+
+<!-- SEGUNDA -->
+<article class="day" id="d2">
+  <div class="day-head">
+    <div class="day-tick"><b>31</b><span>Seg</span></div>
+    <div>
+      <h2>Dia no mar</h2>
+      <p>Segunda é o pior dia para museus — Sant Pere de Rodes fecha. É o dia certo para gastar no mar. Máxima de 28°C, sem chuva.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">10h<em>Recomendado</em></div>
+      <div>
+        <h3>Barca Tour Llançà — rota Cap de Creus, 4h</h3>
+        <p>O barco tem capacidade para 6, então com 5 pessoas sai como privado de verdade. Inclui patrão, combustível, os dois seguros, bebida, aperitivo, guarda-sol, toldo e prancha de paddle surf a bordo.</p>
+        <p>Chega à parte do parque que não tem acesso por estrada. Sai do Port de Llançà, reserva por WhatsApp.</p>
+        <div class="tags">
+          <span class="tag tag--cost">320€ grupo · 64€ /pessoa</span>
+          <a class="tag tag--tel" href="tel:+34635936170">635 936 170</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">—<em>Se preferir</em></div>
+      <div>
+        <h3>Pirates del Cap de Creus — Snorkel Conscient</h3>
+        <p>Meio dia em llaüt tradicional, com guia credenciada pelo Parc Natural. Só roda às segundas de julho e agosto, e 31/08 é a última data da temporada. Vocês dividem o barco e o roteiro é fixo.</p>
+        <div class="tags">
+          <span class="tag tag--cost">60€ /pessoa</span>
+          <a class="tag tag--tel" href="tel:+34657207322">657 207 322</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">—<em>Mais barato</em></div>
+      <div>
+        <h3>Caiaque avulso, SK Kayak</h3>
+        <p>Dois duplos e um individual. Passeig Marítim 4. Confirmem por telefone na véspera: há relatos de cancelamento de última hora avisado só por e-mail.</p>
+        <div class="tags">
+          <span class="tag tag--cost">80€ grupo · 16€ /pessoa · 2h</span>
+          <a class="tag tag--tel" href="tel:+34627433332">627 43 33 32</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">13h<em>Almoço</em></div>
+      <div>
+        <h3>Piquenique a bordo</h3>
+        <p>Padaria e charcutaria em Llançà resolvem por uns 8€ por pessoa, e é bem melhor do que voltar ao porto no meio do passeio.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">21h<em>Jantar</em></div>
+      <div>
+        <h3>Els Pescadors</h3>
+        <p>Carrer Castellar 41. Se for para fazer a refeição cara da viagem, é aqui: cozinha catalã séria e lagosta do Cap de Creus. Reserva obrigatória. Miralles fecha às segundas.</p>
+        <div class="tags">
+          <span class="tag tag--cost">70–90€ /pessoa</span>
+          <a class="tag tag--tel" href="tel:+34972380125">972 38 01 25</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="alt">
+    <span class="eyebrow">Se der tramuntana</span>
+    <p>Segunda é dia de mercado em Cadaqués e em Colera. Manhã no mercado, tarde de praia.</p>
+  </div>
+</article>
+
+<!-- TERÇA -->
+<article class="day" id="d3">
+  <div class="day-head">
+    <div class="day-tick"><b>01</b><span>Ter</span></div>
+    <div>
+      <h2>Cadaqués, Portlligat e o farol</h2>
+      <p>O dia mais longo do roteiro. Saiam às 8h30. Máxima de 27°C, sem chuva.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">9h15<em>Estacionar</em></div>
+      <div>
+        <h3>Corral d’en Morell</h3>
+        <p>Gratuito, com descida a pé ao centro em 10 minutos. Os estacionamentos do centro cobram cerca de 2,50€ por hora. A estrada de Llançã até aqui são 35 km e 45 min, sinuosa — quem enjoa senta na frente.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">9h30<em>Museu</em></div>
+      <div>
+        <h3>Casa-Museu Salvador Dalí, Portlligat</h3>
+        <p>Entrada só com horário marcado e vagas muito limitadas — é a primeira coisa do roteiro a esgotar. Visita guiada de uns 30 minutos, mais o jardim.</p>
+        <div class="tags">
+          <span class="tag tag--cost">15,50€ · reduzida 12€</span>
+          <a class="tag tag--tel" href="tel:+34972251015">972 25 10 15</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">11h30<em>Parque</em></div>
+      <div>
+        <h3>Far de Cap de Creus</h3>
+        <p>Pela lançadeira que sai do Corral d’en Morell a cada 20 minutos. No farol, façam o itinerário circular da Punta ou o do Paratge de Tudela: de 45 minutos a 1h30, terreno rochoso mas plano, tênis fechado obrigatório e zero sombra.</p>
+        <p>É a paisagem mais estranha e bonita da região. Por ser Reserva Natural Integral, é proibido sair dos caminhos marcados.</p>
+        <div class="tags"><span class="tag tag--cost">7€ /pessoa · ida e volta</span></div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">14h<em>Almoço</em></div>
+      <div>
+        <h3>Cadaq’s, Ses Paelles ou El Rebost</h3>
+        <p>Cadaq’s, na Plaça del Passeig, tem croquetes, saladas e poke num terraço agradável, uns 25 a 30€. Ses Paelles é o arroz e a paella, 35 a 45€. El Rebost faz cozinha de mercado com o dono explicando prato a prato, mas na terça só janta.</p>
+        <p>Talla fecha na terça. Compartir abre — está no Guia Michelin, 80 a 100€ por pessoa.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">18h<em>Opcional</em></div>
+      <div>
+        <h3>Far de Cala Nans</h3>
+        <p>Trilha de 3,5 km só de ida, à beira do penhasco, linda na luz baixa. Tem trechos expostos com queda e nenhum corrimão — não façam no escuro.</p>
+      </div>
+    </li>
+  </ul>
+  <div class="alt">
+    <span class="eyebrow">Extra que vale os poucos euros</span>
+    <p>Caiaque de 1h em Portlligat com a <b>Kayaking Costa Brava</b>, a mais bem avaliada da região. Ver a enseada do Dalí da água, com o barco dele ali, é diferente de qualquer foto. Tel. 646 90 15 88.</p>
+  </div>
+</article>
+
+<!-- QUARTA -->
+<article class="day" id="d4">
+  <div class="day-head">
+    <div class="day-tick"><b>02</b><span>Qua</span></div>
+    <div>
+      <h2>Sant Pere de Rodes e Port de la Selva</h2>
+      <p>É o dia com 25% de chance de chuva e o menos dependente de praia. Encaixa bem. Máxima de 29°C.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">9h<em>Mercado</em></div>
+      <div>
+        <h3>Mercado de Llançà</h3>
+        <p>Quarta de manhã, no estacionamento da Av. Mestral, no porto, e no do Carrer Garvisó, na vila.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">10h30<em>Monumento</em></div>
+      <div>
+        <h3>Monestir de Sant Pere de Rodes</h3>
+        <p>Terça a domingo, das 10h às 19h no verão; a bilheteria fecha 30 minutos antes. Estacionamento no próprio monumento. Menores de 16 anos não pagam.</p>
+        <p>A visita guiada custa 4€ além da entrada e dura 60 minutos, mas em setembro só há saídas nos dias 5 e 6 — nos dias de vocês provavelmente não haverá. Vale ligar.</p>
+        <div class="tags">
+          <span class="tag tag--cost">6€ · reduzida 4€</span>
+          <a class="tag tag--tel" href="tel:+34972387559">972 38 75 59</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">11h30<em>Trilhas</em></div>
+      <div>
+        <h3>Santa Helena e o castelo de Verdera</h3>
+        <p>Santa Helena de Rodes, com a igreja pré-românica e as ruínas do povoado medieval, fica a 10 minutos de caminho plano. O Castell de Sant Salvador de Verdera são uns 40 minutos de subida com degraus, mais puxado, com vista de 360° da cordilheira ao mar. Façam a subida antes das 12h.</p>
+        <div class="tags"><span class="tag">10 min · plano</span><span class="tag">40 min · subida</span></div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">14h<em>Almoço</em></div>
+      <div>
+        <h3>Cal Mariner ou Can Pepitu</h3>
+        <p>Quinze minutos descendo até o Port de la Selva. Cal Mariner faz paella marinera e peixe fresco, 35 a 45€. Can Pepitu é tapas com vista do porto, mais barato, uns 25€. Ambos abrem todos os dias.</p>
+        <div class="tags">
+          <a class="tag tag--tel" href="tel:+34972388005">972 38 80 05</a>
+          <a class="tag tag--tel" href="tel:+34640724746">640 72 47 46</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">21h<em>Jantar</em></div>
+      <div>
+        <h3>El Celler</h3>
+        <p>Carrer Llançà 6, no Port de la Selva. Abre às quartas. Cozinha mediterrânea bem-feita. Reserve.</p>
+        <div class="tags">
+          <span class="tag tag--cost">45–55€ /pessoa</span>
+          <a class="tag tag--tel" href="tel:+34972126435">972 12 64 35</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</article>
+
+<!-- QUINTA -->
+<article class="day" id="d5">
+  <div class="day-head">
+    <div class="day-tick"><b>03</b><span>Qui</span></div>
+    <div>
+      <h2>Figueres e Dalí</h2>
+      <p>O dia mais quente da semana, 30°C. O museu tem ar-condicionado, o que ajuda. São 35 km e 35 minutos de Llançà.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">9h<em>Museu</em></div>
+      <div>
+        <h3>Teatre-Museu Dalí</h3>
+        <p>Aberto todos os dias das 9h às 19h45 no verão, com ingresso por horário marcado. <b>Peguem o slot das 9h ou 10h</b> — depois das 11h fica muito cheio e os corredores são estreitos. Reservem de 2h a 2h30 lá dentro.</p>
+        <div class="tags">
+          <span class="tag tag--cost">18,50€ · reduzida 15€</span>
+          <a class="tag tag--tel" href="tel:+34972677500">972 67 75 00</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">11h30<em>Mercado</em></div>
+      <div>
+        <h3>Mercado de Figueres</h3>
+        <p>Quinta é dia de mercado na cidade, o que combina bem com a manhã. Depois, a Rambla, ou o Museu del Joguet de Catalunya por uns 9€.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">14h<em>Almoço</em></div>
+      <div>
+        <h3>Rambla e Plaça de l’Ajuntament</h3>
+        <p>Bastante menu do dia por 15 a 20€. Evitem os restaurantes colados na entrada do museu.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">16h<em>Escolham uma</em></div>
+      <div>
+        <h3>Praia, fortaleza ou barco</h3>
+        <p><b>Praia:</b> volta por Roses, ou parada na Platja de Garbet.</p>
+        <p><b>História:</b> o Castell de Sant Ferran, em Figueres, é a maior fortaleza abaluartada da Europa. Uns 5€, com opção de percurso pelos túneis subterrâneos.</p>
+        <p><b>Mar:</b> o Tast de vins i formatges dos Pirates sai de Llançà às quintas, 60€ por pessoa, navegação em llaüt com curadoria da Empordàlia. Confirmem o horário antes de fechar a tarde.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">21h<em>Jantar</em></div>
+      <div>
+        <h3>Els Pescadors ou Miralles</h3>
+        <p>Els Pescadors, se ainda não tiverem feito o jantar caro. Miralles, na N-260 km 21, é cozinha caseira honesta com menu por 21 a 25€ e às vezes música ao vivo.</p>
+        <div class="tags"><a class="tag tag--tel" href="tel:+34972194405">972 19 44 05</a></div>
+      </div>
+    </li>
+  </ul>
+</article>
+
+<!-- SEXTA -->
+<article class="day" id="d6">
+  <div class="day-head">
+    <div class="day-tick"><b>04</b><span>Sex</span></div>
+    <div>
+      <h2>Manhã leve, almoço e volta</h2>
+      <p>Nada pesado no dia de estrada.</p>
+    </div>
+  </div>
+  <ul class="stops">
+    <li class="stop">
+      <div class="stop-time">9h<em>Escolham uma</em></div>
+      <div>
+        <h3>Caiaque, mercado ou camí de ronda</h3>
+        <p><b>Caiaque na baía de Llançà:</b> dois duplos e um individual, 80€ pelo grupo por 2h. Compromisso zero, sem reserva antecipada.</p>
+        <p><b>Mercado do Port de la Selva ou de Portbou:</b> ambos às sextas de manhã. Bom para levar queijo, embutido e azeite da região.</p>
+        <p><b>Camí de ronda pelo GR-92:</b> Llançà → Far de s’Arenella → Port de la Selva, uns 7 km só de ida, quase todo à beira-mar, fácil. Exige deixar um carro na outra ponta ou combinar táxi.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">11h<em>Check-out</em></div>
+      <div>
+        <h3>Confirmem o horário</h3>
+        <p>A maioria dos apartamentos exige saída até 10h ou 11h.</p>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">13h<em>Almoço</em></div>
+      <div>
+        <h3>L’Atelier</h3>
+        <p>Carrer Nicolás Salmerón 39. Menu único do dia, montado conforme o mercado, e o principal costuma ser um arroz. Abre sexta no almoço das 13h às 15h, é minúsculo e a <b>reserva é obrigatória</b>. Custo-benefício muito acima da média local.</p>
+        <div class="tags">
+          <span class="tag tag--cost">25–30€ /pessoa</span>
+          <a class="tag tag--tel" href="tel:+34972381206">972 38 12 06</a>
+        </div>
+      </div>
+    </li>
+    <li class="stop">
+      <div class="stop-time">16h<em>Estrada</em></div>
+      <div>
+        <h3>Volta a Barcelona</h3>
+        <p>São 170 km e cerca de 2h, sem pedágio. Sexta à tarde de verão o trecho Girona–Barcelona costuma engarrafar: melhor sair antes das 15h ou depois das 18h.</p>
+      </div>
+    </li>
+  </ul>
+</article>
+</main>
+
+<!-- OPÇÕES DE MAR -->
+<section class="slab" id="mar">
+  <div class="wrap">
+    <p class="eyebrow">Comparação</p>
+    <h2>Quanto custa cada opção de mar</h2>
+    <table class="tbl">
+      <thead><tr><th>Opção</th><th>Duração</th><th class="n">Por pessoa</th></tr></thead>
+      <tbody>
+        <tr><td>Caiaque avulso, SK Kayak</td><td class="n">2h</td><td class="n">16€</td></tr>
+        <tr><td>Creuers Cadaqués, saída regular</td><td class="n">~1h30</td><td class="n">15–20€</td></tr>
+        <tr><td>Barca Tour privado, Llançà–Colera</td><td class="n">2h</td><td class="n">38€</td></tr>
+        <tr><td>Trilha guiada dos Pirates</td><td class="n">4h</td><td class="n">40€</td></tr>
+        <tr><td>Barca Tour compartilhado</td><td class="n">2h</td><td class="n">50€</td></tr>
+        <tr><td>SK Kayak com snorkel guiado <span style="opacity:.65">· mín. 12 anos</span></td><td class="n">4h</td><td class="n">50€</td></tr>
+        <tr><td>Pirates compartilhado <span style="opacity:.65">· snorkel, vinhos, ioga</span></td><td class="n">meio dia</td><td class="n">60€</td></tr>
+        <tr class="pick"><td><b>Barca Tour privado, Cap de Creus</b></td><td class="n">4h</td><td class="n"><b>64€</b></td></tr>
+        <tr><td>Barca Tour privado, Cap de Creus</td><td class="n">6h</td><td class="n">86€</td></tr>
+        <tr><td>Pirates, Tour dels corsaris</td><td class="n">8h</td><td class="n">110€</td></tr>
+      </tbody>
+    </table>
+    <p class="slab-note">A linha destacada é a recomendação: barco só de vocês, horário flexível, paddle incluído e acesso à parte do parque que não tem estrada. Custa 4€ a mais que o compartilhado.</p>
+  </div>
+</section>
+
+<!-- ONDE COMER -->
+<section class="light" id="mesa">
+  <div class="wrap">
+    <p class="eyebrow">À mesa</p>
+    <h2>Onde comer e quando fecham</h2>
+    <table class="tbl tbl--light">
+      <thead><tr><th>Restaurante</th><th>Onde</th><th>Fecha</th></tr></thead>
+      <tbody>
+        <tr><td>El Floc</td><td>Llançà</td><td class="open">nunca · 9h–24h</td></tr>
+        <tr><td>Mångata</td><td>Llançà, Platja de la Farella</td><td class="open">nunca · 11h–23h</td></tr>
+        <tr><td>Els Pescadors</td><td>Llançà</td><td class="open">nunca</td></tr>
+        <tr><td>Pati Blanc</td><td>Llançà</td><td class="closed">terça</td></tr>
+        <tr><td>Miralles</td><td>Llançà, N-260</td><td class="closed">segunda</td></tr>
+        <tr><td>L’Atelier</td><td>Llançà</td><td class="closed">sáb e dom · só almoço seg–qui</td></tr>
+        <tr><td>Cal Mariner</td><td>Port de la Selva</td><td class="open">nunca</td></tr>
+        <tr><td>Can Pepitu</td><td>Port de la Selva</td><td class="open">nunca</td></tr>
+        <tr><td>El Celler</td><td>Port de la Selva</td><td class="closed">segunda · dom só almoço</td></tr>
+        <tr><td>Ses Paelles</td><td>Cadaqués</td><td class="open">nunca</td></tr>
+        <tr><td>Cadaq’s</td><td>Cadaqués</td><td class="closed">quarta</td></tr>
+        <tr><td>Talla</td><td>Cadaqués</td><td class="closed">terça</td></tr>
+        <tr><td>Compartir</td><td>Cadaqués</td><td class="closed">segunda</td></tr>
+        <tr><td>El Rebost de Cadaqués</td><td>Cadaqués</td><td class="closed">seg e ter só jantam</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CUSTO -->
+<section class="slab" id="custo">
+  <div class="wrap">
+    <p class="eyebrow">Orçamento</p>
+    <h2>660 a 880€ por pessoa</h2>
+    <table class="tbl">
+      <thead><tr><th>Item</th><th class="n">Por pessoa</th></tr></thead>
+      <tbody>
+        <tr><td>Alimentação <span style="opacity:.65">· 6 dias, com um jantar caro</span></td><td class="n">320–400€</td></tr>
+        <tr><td>Atividades <span style="opacity:.65">· barco, Dalí ×2, mosteiro, lançadeira, caiaque, estacionamentos</span></td><td class="n">~100€</td></tr>
+        <tr><td>Transporte rateado <span style="opacity:.65">· ~450 km, sem pedágio</span></td><td class="n">20–25€</td></tr>
+        <tr><td>Hospedagem <span style="opacity:.65">· 6 noites, 1.080–1.800€ pelo grupo</span></td><td class="n">216–360€</td></tr>
+        <tr class="tbl-total"><td>Total</td><td class="n">660–880€</td></tr>
+      </tbody>
+    </table>
+    <p class="slab-note">Dá para cortar de 100 a 150€ por pessoa trocando o barco privado por caiaque, cozinhando dois ou três jantares em casa e substituindo Els Pescadors por Miralles.</p>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="light" id="reservas">
+  <div class="wrap">
+    <p class="eyebrow">Antes de sair</p>
+    <h2>Reservas</h2>
+    <ul class="checks">
+      <li><label><input type="checkbox"><span class="ck-txt"><b>Almoço de domingo 30</b><span>Último domingo da alta temporada. Tudo lota.</span></span></label></li>
+      <li><label><input type="checkbox"><span class="ck-txt"><b>Casa-Museu Dalí, Portlligat</b><span>Vagas por horário, muito limitadas. É o gargalo do roteiro.</span></span></label></li>
+      <li><label><input type="checkbox"><span class="ck-txt"><b>Teatre-Museu Dalí, Figueres</b><span>Slot das 9h ou 10h de quinta.</span></span></label></li>
+      <li><label><input type="checkbox"><span class="ck-txt"><b>Barco ou caiaque de segunda</b><span>Confirmar a meteorologia na véspera, por telefone.</span></span></label></li>
+      <li><label><input type="checkbox"><span class="ck-txt"><b>L’Atelier, sexta no almoço</b><span>Restaurante minúsculo, abre poucas horas.</span></span></label></li>
+      <li><label><input type="checkbox"><span class="ck-txt"><b>Els Pescadors ou El Celler</b><span>Para o jantar principal da viagem.</span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- MERCADOS -->
+<section class="light" style="padding-top:0" id="mercados">
+  <div class="wrap">
+    <p class="eyebrow">Manhãs</p>
+    <h2>Mercados da semana</h2>
+    <dl class="week">
+      <div class="on"><dt>Segunda</dt><dd>Cadaqués<br>Colera</dd></div>
+      <div><dt>Terça</dt><dd class="none">—</dd></div>
+      <div class="on"><dt>Quarta</dt><dd>Llançà</dd></div>
+      <div class="on"><dt>Quinta</dt><dd>Figueres</dd></div>
+      <div class="on"><dt>Sexta</dt><dd>Port de la Selva<br>Portbou</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- TELEFONES -->
+<section class="slab" id="tel">
+  <div class="wrap">
+    <p class="eyebrow">Ligar</p>
+    <h2>Telefones</h2>
+    <div class="tels">
+      <a href="tel:+34635936170"><b>Barca Tour Llançà</b><span>635 936 170</span></a>
+      <a href="tel:+34657207322"><b>Pirates del Cap de Creus</b><span>657 207 322</span></a>
+      <a href="tel:+34627433332"><b>SK Kayak, Llançà</b><span>627 43 33 32</span></a>
+      <a href="tel:+34646901588"><b>Kayaking Costa Brava</b><span>646 90 15 88</span></a>
+      <a href="tel:+34615636157"><b>Creuers Cadaqués</b><span>615 636 157</span></a>
+      <a href="tel:+34972387559"><b>Sant Pere de Rodes</b><span>972 38 75 59</span></a>
+      <a href="tel:+34972251015"><b>Casa-Museu Dalí</b><span>972 25 10 15</span></a>
+      <a href="tel:+34972677500"><b>Teatre-Museu Dalí</b><span>972 67 75 00</span></a>
+      <a href="tel:+34972381206"><b>L’Atelier</b><span>972 38 12 06</span></a>
+      <a href="tel:+34972380125"><b>Els Pescadors</b><span>972 38 01 25</span></a>
+      <a href="tel:+34972126435"><b>El Celler</b><span>972 12 64 35</span></a>
+      <a href="tel:+34972388005"><b>Cal Mariner</b><span>972 38 80 05</span></a>
+      <a href="tel:+34640724746"><b>Can Pepitu</b><span>640 72 47 46</span></a>
+      <a href="tel:+34972121662"><b>El Floc</b><span>972 12 16 62</span></a>
+      <a href="tel:+34972194405"><b>Miralles</b><span>972 19 44 05</span></a>
+      <a href="tel:+34613522212"><b>Mångata</b><span>613 52 22 12</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Preços de ingressos e passeios são os divulgados pelos operadores e podem ter mudado. Confirme na reserva.</p>
+    <p>O mapa é um esquema para orientar o roteiro. Não serve para navegação.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.daynav a[href^="#"]'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var nav = document.querySelector('.daynav ul');
+
+  function mark(el){
+    links.forEach(function(a,i){
+      var on = targets[i] === el;
+      a.setAttribute('aria-current', on ? 'true' : 'false');
+      if(on && nav){
+        var r = a.getBoundingClientRect(), n = nav.getBoundingClientRect();
+        if(r.left < n.left || r.right > n.right){
+          nav.scrollTo({left: a.offsetLeft - 20, behavior:'smooth'});
+        }
+      }
+    });
+  }
+
+  if('IntersectionObserver' in window){
+    var seen = new Map();
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ seen.set(e.target, e.isIntersecting ? e.intersectionRatio : 0); });
+      var best = null, top = 0;
+      seen.forEach(function(v,k){ if(v > top){ top = v; best = k; } });
+      if(best) mark(best);
+    }, {rootMargin:'-74px 0px -55% 0px', threshold:[0,.15,.4,.75,1]});
+    targets.forEach(function(t){ if(t) io.observe(t); });
+  }
+})();
+</script>
+</body>
+</html>
